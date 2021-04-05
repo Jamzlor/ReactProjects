@@ -1,0 +1,144 @@
+
+/* element */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #91d18b;
+    font-family: monospace;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+label{
+    font-size: 24px;
+}
+label:active{
+    color: #16697a;
+}
+
+/* class */
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blockSpacing{
+    width: 370px;
+    margin: 10% 30px 0;
+}
+.buttonSpacing{
+    margin: 0 20px;
+    width: 30px;
+}
+.controlsSpacing{
+    font-size: 24px;
+    margin: 10px 10px;
+}
+.fa{
+    margin: 8px 0 0;
+}
+
+/* ID */
+#break-length, #session-length{
+    width: 100%;
+    margin-top: 10%;
+    font-size: 36px;
+}
+#wrapper{
+    width: 900px;
+    margin: 10% auto 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+    background-color: #cd0a0a;
+}
+#title{
+    font-size: 40px;
+    padding: 60px;
+    background-color: #158467;
+    clip-path: polygon(31% 88%, 49% 100%, 67% 81%, 91% 96%, 92% 77%, 100% 67%, 97% 45%, 100% 21%, 77% 22%, 61% 0, 45% 15%, 26% 1%, 18% 21%, 1% 22%, 5% 76%, 4% 100%);    margin: 10% auto 0;
+    width: 60%;
+}
+#timer-label{
+    font-size: 24px;
+}
+#timer-display{
+    color: #cd0a0a;
+    margin: 30px auto 0;
+    border-radius: 5px;
+    width: 30%;
+    height: 100px;
+    background-color: #91d18b;
+}
+#time-left{
+    font-size: 50px;
+    margin-top: 25px;
+}
+#start_stop{
+    width: 40px;
+    height: 40px;
+}
+#footer{
+    padding-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #wrapper{
+        width: 60%;
+        clip-path: none;
+        border-radius: 40%;
+    }
+    .blockSpacing{
+        width: 85%;
+    }
+    #title{
+        padding: 40px;
+        font-size: 30px;
+        clip-path: polygon(31% 88%, 49% 100%, 67% 81%, 91% 96%, 92% 77%, 100% 67%, 97% 45%, 100% 21%, 73% 18%, 61% 0, 45% 15%, 26% 1%, 18% 21%, 1% 22%, 5% 76%, 4% 100%);    
+    }
+    #break-length, #session-length{
+        margin-top: 2%;
+    }
+    .flex-container{
+        display: block;
+    }
+
+    #lengthSelectors{
+        margin: 0 auto;
+    }
+    #timer-display{
+        width: 40%;
+        height: 60px;
+    }
+    #time-left{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    label{
+        font-size: 16px;
+    }
+    #wrapper{
+        width: 80%;
+        border-radius: 5px;
+    }
+    #break-label{
+        margin-top: 60px;
+    }
+    #break-length, #session-length{
+        width: 100%;
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    #title{
+        font-size: 14px;
+    }
+    #time-left{
+        font-size: 32px;
+        padding-top: 10px;
+    }
+}
